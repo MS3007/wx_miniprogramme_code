@@ -1,0 +1,165 @@
+/* pages/page3/page3.wxss */
+.content{
+  background-color: rgb(247,246,251);
+  height: 100vh;
+}
+.content .title-view {
+  padding-left: 30rpx;
+  height: 150rpx;
+  color: #333333;
+  background-color: rgb(247,246,251);
+}
+.title-view .text1{
+  line-height: 90rpx;
+  font-size: 18px;
+  color: black;
+}
+.title-view .text2{
+  font-size: 15px;
+  color: rgb(157,157,157);
+}
+.content .form-view {
+  background-color: white;
+  padding-left: 30rpx;
+}
+
+.form-view .form-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 104rpx;
+  justify-items: center;
+  font-size: 34rpx;
+}
+
+.form-item .form-item-left {
+  line-height: 104rpx;
+  height: 104rpx;
+}
+
+.form-item .form-item-right {
+  height: 104rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 30rpx;
+}
+.avatar-wrapper {
+ padding: 0;
+  width: 40px !important;
+  border-radius: 8px;
+	background-color: rgb(157,157,157,0);
+}
+
+.avatar {
+  display: block;
+  width: 35px;
+	height: 35px;
+  margin-top: 20rpx;
+}
+.form-item-right input {
+  height: 104rpx;
+  text-align: right;
+}
+
+.form-item-right text {
+  height: 104rpx;
+  line-height: 104rpx;
+  text-align: right;
+  color: rgb(131,131,131);
+}
+
+.content .bottom-line {
+  background-color: #e0e0e0;
+  height: 1rpx;
+}
+
+.form-item-right .arr {
+  width: 20rpx;
+  height: 40rpx;
+  margin-top: 32rpx;
+  margin-left: 20rpx;
+}
+.gender-img{
+  width: 30px;
+  height: 30px;
+  margin-top: 32rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.shop-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 34rpx;
+  padding-left: 30rpx;
+}
+
+.shop-view .zhe-text {
+  padding: 0rpx 20rpx;
+  background-color: #F2F1F6;
+  margin-left: 24rpx;
+}
+
+.shop-view .form-item-right view {
+  margin: 0rpx;
+  height: 104rpx;
+  width: 60rpx;
+  background-color: greenyellow;
+}
+
+.form-item-right view text{
+  width: 40rpx;
+  height: 30rpx;
+  margin-top: 38rpx;
+  margin: 0rpx;
+  margin-left: 10rpx;
+}
+
+.shop-view .form-item-right {
+  padding-right: 0rpx;
+}
+
+.content .active-view {
+  font-size: 34rpx;
+  text-align: center;
+  color: orange;
+  height: 104rpx;
+  line-height: 104rpx;
+}
+
+.content .add-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 34rpx;
+  color: #333333;
+  justify-items: center;
+}
+
+.add-view text {
+  line-height: 104rpx;
+  height: 104rpx;
+  margin-left: 20rpx;
+}
+
+.add-view image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 28rpx;
+}
+
+.add-view view {
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  justify-content: center;
+}
+
+.add-view .add-view-scan{
+  border-right: #e0e0e0 4rpx solid;
+}
+
+/* .picker{
+	font-size: 50px;
+} */

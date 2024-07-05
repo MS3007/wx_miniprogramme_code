@@ -1,0 +1,106 @@
+<view class="content">
+	<form bindsubmit="">
+		<view class="title-view">
+			<view class="text1">必填信息</view>
+			<view class="text2">头像、姓名、性别为必填信息，其余信息选填</view>
+		</view>
+		<view class="form-view">
+			<view class="form-item">
+				<view class="form-item-left">头像</view>
+				<view class="form-item-right">
+					<button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+						<image class="avatar" src="{{avatarUrl}}"></image>
+					</button>
+					<image class="arr" src="/images/more.png" mode="" />
+					<!-- <input type="text" placeholder="请输入商品的名字" /> -->
+				</view>
+			</view>
+			<view class="bottom-line"></view>
+			<view class="form-item">
+				<view class="form-item-left">昵称</view>
+				<view class="form-item-right">
+					<input type="text" bind:input="inputData" data-flag="userName" value="{{userName}}" placeholder="请输入昵称" />
+				</view>
+			</view>
+			<view class="bottom-line"></view>
+
+			<view class="form-item">
+				<view class="form-item-left">员工工号</view>
+				<view class="form-item-right">
+					<input type="text" bind:input="inputData" data-flag="userID" value="{{userID}}" placeholder="请输入工号" />
+				</view>
+			</view>
+			<view class="bottom-line"></view>
+			<view class="form-item">
+				<view class="form-item-left">手机号码</view>
+				<view class="form-item-right">
+					<input type="text" bind:input="inputData" data-flag="phoneNumber" value="{{phoneNumber}}" placeholder="请输入手机号码" />
+				</view>
+			</view>
+
+			<view class="bottom-line"></view>
+			<picker class="picker" bindchange="bindPickerChange" value="{{item}}" range="{{roleArray}}" data-flag="role">
+				<view class="form-item">
+					<view class="form-item-left">职位</view>
+					<view class="form-item-right">
+						<text>{{role}}</text>
+						<image class="arr" src="/images/more.png" mode="" />
+					</view>
+				</view>
+			</picker>
+			<view class="bottom-line"></view>
+			<picker bindchange="bindPickerChange" value="{{item}}" range="{{isAdminArray}}" data-flag="isAdmin">
+				<view class="form-item">
+					<view class="form-item-left">原始管理员</view>
+					<view class="form-item-right">
+						<text>{{isAdmin}}</text>
+						<image class="arr" src="/images/more.png" mode="" />
+					</view>
+				</view>
+			</picker>
+			<view class="bottom-line"></view>
+			<picker bindchange="bindPickerChange" value="{{item}}" range="{{genderArray}}" data-flag="gender">
+				<view class="form-item">
+					<view class="form-item-left">性别</view>
+					<view class="form-item-right">
+						<image class="gender-img" wx:if="{{gender=='男'}}" src="/images/male.png"></image>
+						<image class="gender-img" wx:elif="{{gender=='女'}}" src="/images/female.png"></image>
+						<text>{{gender}}</text>
+						<image class="arr" src="/images/more.png" mode="" />
+					</view>
+				</view>
+			</picker>
+			<view class="bottom-line"></view>
+			<picker bindchange="bindPickerChange" value="{{item}}" range="{{txArray}}" data-flag="tx">
+				<view class="form-item">
+					<view class="form-item-left">头衔</view>
+					<view class="form-item-right">
+						<text>{{tx}}</text>
+						<image class="arr" src="/images/more.png" mode="" />
+					</view>
+				</view>
+
+			</picker>
+		</view>
+		<view class="title-view">
+			<view class="text1">选填信息</view>
+			<view class="text2">以下详细资料内容为选填信息</view>
+		</view>
+		<view class="form-view">
+			<view class="form-item">
+				<view class="form-item-left">姓名</view>
+				<view class="form-item-right">
+					<input type="text" bind:input="inputData" data-flag="uname" value="{{uname}}" placeholder="请输入姓名" />
+				</view>
+			</view>
+			<view class="bottom-line"></view>
+			<view class="form-item">
+				<view class="form-item-left">邮箱</view>
+				<view class="form-item-right">
+					<input type="text" bind:input="inputData" data-flag="mail" value="{{mail}}" placeholder="请输入邮箱" />
+				</view>
+			</view>
+			<view class="bottom-line"></view>
+		</view>
+	</form>
+</view>
