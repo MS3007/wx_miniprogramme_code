@@ -1,0 +1,7 @@
+<view>
+  123456
+</view>
+
+<scroll-view scroll-y refresher-enabled refresher-triggered="{{showRefresh}}" bindrefresherrefresh="onRefresh" bindscrolltolower="onLoadMore">
+  <view wx:for="{{dataNumber}}">{{index}}</view>
+</scroll-view>

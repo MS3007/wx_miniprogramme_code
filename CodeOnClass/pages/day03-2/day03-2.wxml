@@ -1,0 +1,5 @@
+<!--pages/day03-2/day03-2.wxml-->
+<view bindtap="click" style="background-color: chartreuse;" wx:if="{{number<=1}}"></view>
+<view bindtap="click" style="background-color: rgb(0, 217, 255);" wx:elif="{{number>1&&number<=3}}"></view>
+<view bindtap="click" style="background-color: rgb(146, 25, 136);" wx:elif="{{number>3}}"></view>
+

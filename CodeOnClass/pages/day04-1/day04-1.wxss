@@ -1,0 +1,91 @@
+/* pages/page3/page3.wxss */
+.container{
+  padding: 22rpx;
+  background-color: #F0F1F6;
+  height: 100vh;
+}
+.container .container-item{
+  background-color: white;
+  height: 250rpx;
+  border-radius: 16rpx;
+  margin-top: 30rpx;
+}
+.container .name-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10rpx 20rpx;
+  background-color: rgb(247,246,251);
+}
+.name-view .name-view-right{
+  display: flex;
+  justify-items: center;
+}
+.name-view .name-view-left{
+  display: flex;
+  justify-items: center;
+}
+.name-view image{
+  width: 50rpx;
+  height: 50rpx;
+  /* background-color: red; */
+}
+.name-view text{
+  line-height: 50rpx;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+}
+.name-view-left image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.name-view-right image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 14rpx;
+}
+.container .status-view {
+  align-items: center;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10rpx 20rpx;
+}
+.status-view .item-right{
+  display: flex;
+  justify-items: center;
+}
+.item-time{
+  color: #999999;
+  font-size: 24rpx;
+  margin-right: 10rpx;
+}
+.item-status{
+  background-color: rgb(37,137,246);
+  font-size: 24rpx;
+  color: white;
+  border: none;
+  padding: 3px 7px;
+	border-radius: 3px;
+}
+.item-level image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.label{
+  padding: 0rpx 20rpx;
+}
+.label-item{
+  background-color: rgb(37,137,246);
+  color: white;
+  border: none;
+  padding: 3px 7px;
+  border-radius: 3px;
+  margin-right: 10rpx;
+  font-size: 24rpx;
+}
+.py{
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #999999;
+}

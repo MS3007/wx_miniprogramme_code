@@ -1,0 +1,134 @@
+.header {
+  position: relative;
+  background-image: url('https://cloud.51shang.cn/mall/2024/03/25/ba708c03f5a84d6e9bc3ab6b42706346.jpg');
+  background-size: cover; /* 确保背景图覆盖整个header */
+  background-position: center; /* 将背景图居中 */
+  background-repeat: no-repeat; /* 防止背景图重复 */
+  padding: 16px;
+  color: rgb(255, 248, 248); /* 设置文字颜色为白色，使其在深色背景上可见 */
+}
+
+.header-tabs {
+	font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+	margin-left: 15px;
+}
+
+.header-note {
+  font-size: 15px;
+	margin-top:20rpx;
+	margin-left: 15px;
+	font-weight:500;
+	
+}
+.tab {
+
+  /* text-align: center; */
+	padding: 10px 0;
+	font-weight:100;
+}
+.tab-1{
+	font-weight:600;
+}
+.tab-space{
+
+  /* text-align: center; */
+	padding: 10px 0;
+	font-weight:100;
+}
+
+
+.header-title {
+	margin-top: 20rpx;
+	align-items: center; 
+	  justify-content: center; 
+		display: flex;
+	font-size: 16px;
+  font-weight:500;
+
+}
+.header-title image{
+	margin-right: 10rpx;
+	width: 50rpx;
+	height: 50rpx;
+}
+.content {
+  background-color: rgb(239,241,245);
+	padding: 16px;
+	height: 100vh;
+}
+.bonus-list {
+  display: flex;
+	flex-direction: column;
+
+}
+.bonus-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 30rpx;
+	border: rgba(109, 109, 109, 0.356) solid 2rpx;
+	border-radius: 16rpx;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 4px 8px rgba(109,109,109, 0.2); /* 添加阴影 */
+}
+
+.bonus-item-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+	margin-right: 10px;
+	margin-left: 10px;
+	border: rgb(187, 186, 186) solid 2rpx;
+}
+.item-1{
+	align-items: center; 
+	  justify-content: center; 
+}
+.name {
+	font-size: small;
+	font-weight: bolder;
+	color:rgb(82, 79, 79);
+}
+
+.position {
+	margin-top: 10rpx;
+	background-color: rgb(97,200,243);
+  color: white;
+  border: none;
+  padding: 3px 7px;
+	border-radius: 3px;
+	font-size: small;
+
+}
+.item-2{
+	margin-right: 15rpx;
+}
+.bonus-amount {
+	text-align: right;
+  font-size: 16px;
+  font-weight: 20rpx;
+  color: rgb(255, 81, 0);
+}
+
+.bonus-button {
+	margin-top: 10rpx;
+	background-color: rgb(255, 255, 255);
+  color: rgb(97,200,243);
+  border: rgba(97, 199, 243, 0.637) solid 2rpx;
+  padding: 3px 2px;
+	border-radius: 3px;
+	font-size: small;
+	letter-spacing:4rpx;
+	text-align: center;
+	width: 65px;
+	
+}

@@ -1,0 +1,206 @@
+<!--pages/login/login.wxml-->
+<view class="page">
+  <title class="tit">九九乘法表</title>
+  <scroll-view scroll-x="true" style="white-space: nowrap; ">
+    <view class="container">
+      <view class="container_children ">
+        <view class="view1">
+          <view>一一得一</view>
+          <view>1*1=1</view>
+        </view>
+        <view class="view1">
+          <view>一二得二</view>
+          <view>1*2=2</view>
+        </view>
+        <view class="view1">
+          <view>一三得三</view>
+          <view>1*3=3</view>
+        </view>
+        <view class="view1">
+          <view>一四得四</view>
+          <view>1*4=4</view>
+        </view>
+        <view class="view1">
+          <view>一五得五</view>
+          <view>1*5=5</view>
+        </view>
+        <view class="view1">
+          <view>一六得六</view>
+          <view>1*6=6</view>
+        </view>
+        <view class="view1">
+          <view>一七得七</view>
+          <view>1*7=7</view>
+        </view>
+        <view class="view1">
+          <view>一八得八</view>
+          <view>1*8=8</view>
+        </view>
+        <view class="view1">
+          <view>一九得九</view>
+          <view>1*9=9</view>
+        </view>
+      </view>
+      <view class="container_children " style="margin-top: 140rpx;">
+        <view class="view2">
+          <view>二二得四</view>
+          <view>2*2=4</view>
+        </view>
+        <view class="view2">
+          <view>二三得六</view>
+          <view>2*3=6</view>
+        </view>
+        <view class="view2">
+          <view>二四得八</view>
+          <view>2*4=8</view>
+        </view>
+        <view class="view2">
+          <view>二五一十</view>
+          <view>2*5=10</view>
+        </view>
+        <view class="view2">
+          <view>二六十二</view>
+          <view>2*6=12</view>
+        </view>
+        <view class="view2">
+          <view>二七十四</view>
+          <view>2*7=14</view>
+        </view>
+        <view class="view2">
+          <view>二八十六</view>
+          <view>2*8=16</view>
+        </view>
+        <view class="view2">
+          <view>二九十八</view>
+          <view>2*2=4</view>
+        </view>
+      </view>
+      <view class="container_childsren " style="margin-top: 280rpx">
+        <view class="view3">
+          <view>三三得九</view>
+          <view>3*3=9</view>
+        </view>
+        <view class="view3">
+          <view>三四十二</view>
+          <view>3*4=12</view>
+        </view>
+        <view class="view3">
+          <view>三五十五</view>
+          <view>3*5=15</view>
+        </view>
+        <view class="view3">
+          <view>三六十八</view>
+          <view>3*6=18</view>
+        </view>
+        <view class="view3">
+          <view>三七二十一</view>
+          <view>3*7=21</view>
+        </view>
+        <view class="view3">
+          <view>三八二十四</view>
+          <view>3*8=24</view>
+        </view>
+        <view class="view3">
+          <view>三九二十七</view>
+          <view>3*9=27</view>
+        </view>
+      </view>
+      <view class="container_children " style="margin-top: 420rpx">
+        <view class="view1">
+          <view>四四十六</view>
+          <view>4*4=16</view>
+        </view>
+        <view class="view1">
+          <view>四五二十</view>
+          <view>4*5=20</view>
+        </view>
+        <view class="view1">
+          <view>四六二十四</view>
+          <view>4*6=24</view>
+        </view>
+        <view class="view1">
+          <view>四七二十八</view>
+          <view>4*7=28</view>
+        </view>
+        <view class="view1">
+          <view>四八三十二</view>
+          <view>4*8=32</view>
+        </view>
+        <view class="view1">
+          <view>四九三十六</view>
+          <view>4*9=36</view>
+        </view>
+      </view>
+      <view class="container_children " style="margin-top: 560rpx">
+        <view class="view2">
+          <view>五五二十五</view>
+          <view>5*5=25</view>
+        </view>
+        <view class="view2">
+          <view>五六三十</view>
+          <view>5*6=30</view>
+        </view>
+        <view class="view2">
+          <view>五七三十五</view>
+          <view>5*7=35</view>
+        </view>
+        <view class="view2">
+          <view>五八四十六</view>
+          <view>5*8=40</view>
+        </view>
+        <view class="view2">
+          <view>五九四十五</view>
+          <view>5*9=45</view>
+        </view>
+      </view>
+      <view class="container_children " style="margin-top: 700rpx">
+        <view class="view3">
+          <view>六六三十六</view>
+          <view>6*6=36</view>
+        </view>
+        <view class="view3">
+          <view>六七四十二</view>
+          <view>6*7=42</view>
+        </view>
+        <view class="view3">
+          <view>六八四十八</view>
+          <view>6*8=48</view>
+        </view>
+        <view class="view3">
+          <view>六九五十四</view>
+          <view>6*9=54</view>
+        </view>
+      </view>
+      <view class="container_children " style="margin-top: 840rpx">
+        <view class="view1">
+          <view>七七四十九</view>
+          <view>7*7=49</view>
+        </view>
+        <view class="view1">
+          <view>七八五十六</view>
+          <view>7*8=56</view>
+        </view>
+        <view class="view1">
+          <view>七九六十三</view>
+          <view>7*9=63</view>
+        </view>
+      </view>
+      <view class="container_children " style="margin-top: 980rpx">
+        <view class="view2">
+          <view>八八六十四</view>
+          <view>8*8=64</view>
+        </view>
+        <view class="view2">
+          <view>八九七十二</view>
+          <view>8*9=72</view>
+        </view>
+      </view>
+      <view class="container_children " style="margin-top: 1120rpx">
+        <view class="view3">
+          <view>九九八十一</view>
+          <view>9*9=81</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

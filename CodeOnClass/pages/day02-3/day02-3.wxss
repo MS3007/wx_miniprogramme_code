@@ -1,0 +1,11 @@
+/* pages/day02-3/day02-3.wxss */
+.title {
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #000000;
+  font-size: 44rpx;
+  margin-bottom: 40rpx;
+}
+.number{
+  font-size: 500;
+}

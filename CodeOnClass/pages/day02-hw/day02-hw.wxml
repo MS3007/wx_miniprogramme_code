@@ -1,0 +1,29 @@
+<!--pages/day02-hw/day02-hw.wxml-->
+<view class="container">
+  <image class="logo" src="../../images/logo.gif"></image>
+  <view class="title">欢迎使用</view>
+  <view class="top_tip">一卡通移动端小程序</view>
+  <view class="input_area">
+    <image class="input_area_logo" src="../../images/phone.png"></image>
+    <view class="input_area_alert">手机号码</view>
+    <view class="input_area_space">|</view>
+    <input class="input_text" type="text" placeholder="请输入手机号码" bind:input="inputData" data-flag="phoneNumber" />
+  </view>
+  <view class="input_area">
+    <image class="input_area_logo" src="../../images/password.png"></image>
+    <view class="input_area_alert">登录密码</view>
+    <view class="input_area_space">|</view>
+    <input class="input_text" 	password="true" type="text" placeholder="请输入登录密码" bind:input="inputData" data-flag="passWord" />
+  </view>
+  <button  bindtap="login" class="login_button">登录</button>
+  <view>
+    <view class="lost_password">
+      <image class="lost_password_logo" src="../../images/doubt.png"></image>
+      <view class="lost_password_text">忘记密码</view>
+    </view>
+    <view class="radio">
+      <radio class="radio_box">我已阅读并同意</radio>
+      <view class="radio_text">《用户服务协议及隐私政策》</view>
+    </view>
+  </view>
+</view>

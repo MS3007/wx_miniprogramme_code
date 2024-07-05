@@ -1,0 +1,8 @@
+<input type="text" bind:input="inputData" data-flag="userName" value="{{userName}}"/>
+<input type="text" bind:input="inputData" data-flag="passWord" value="{{passWord}}"/>
+<label clasee="checkbox" bindtap="clickisRemember">
+	<checkbox value="isRemember" data-flag="isRemember" checked="{{isRemember}}">记住密码</checkbox>
+</label>
+<button bind:tap="clicklogin">登录</button>
+
+

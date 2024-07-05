@@ -1,0 +1,7 @@
+/**index.wxss**/
+input{
+  border: skyblue solid 2rpx;
+  margin: 10rpx;
+  padding: 10rpx;
+  border-radius: 6rpx;
+}

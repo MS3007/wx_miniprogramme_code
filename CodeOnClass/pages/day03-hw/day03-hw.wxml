@@ -1,0 +1,29 @@
+<view class="header">
+  <view class="header-tabs">
+    <view class="tab">提成奖金</view>
+		<view class="tab-space">|</view>
+    <view class="tab tab-1">点购打赏</view>
+		<view class="tab-space">|</view>
+    <view class="tab">达成营业额目标奖金</view>
+  </view>
+  <view class="header-note">您的个人展示信息过少，建议前往员工档案中上传更多个人形象照片或者视频，点击跳转转员工档案</view>
+	<view class="header-title"><image src="/images/search.png"></image>待发奖金列表</view>
+</view>
+<view class="content">
+  <view class="bonus-list">
+    <view class="bonus-item" wx:for="{{bonusList}}" wx:key="id">
+      <view class="bonus-item-info">
+        <image class="avatar" src="{{item.avatar}}" />
+        <view class="item-1">
+					<view class="name">{{item.name}}</view>
+        	<view class="position">{{item.position}}</view>
+				</view>
+      </view>
+			<view class="item-2">
+				<view class="bonus-amount">￥{{item.amount}}</view>
+      <view class="bonus-button">待发奖金</view>
+			</view>
+
+    </view>
+  </view>
+</view>

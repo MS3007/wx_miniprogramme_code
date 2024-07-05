@@ -1,0 +1,12 @@
+view{
+  height: 500rpx;
+  background-color:red;
+  margin: 30rpx;
+  text-align: center;
+  font-size: 100rpx;
+  line-height: 500rpx;
+}
+  scrol1-view{
+  width: 100vw;
+  height: 800rpx;
+}

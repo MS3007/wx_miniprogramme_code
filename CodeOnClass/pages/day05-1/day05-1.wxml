@@ -1,0 +1,3 @@
+<!--pages/day05-1/day05-1.wxml-->
+<text>页面跳转及跨页面信息传递</text>
+<button bindtap="navito">跳转页面</button>

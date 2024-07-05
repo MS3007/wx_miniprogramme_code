@@ -1,0 +1,117 @@
+/* pages/day02-hw/day02-hw.wxss */
+
+.container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  margin-top: 60px;
+  padding: 0;
+}
+.logo{
+  width: 70px;
+  height: 70px;
+}
+.title {
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #008bfd;
+  font-size: 50rpx;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+.top_tip {
+  font-size: 45rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #444444;
+  margin-bottom: 100rpx;
+}
+.input_area {
+  /* justify-content: center;  */
+  align-items: center; 
+  display: flex;
+  margin-top: 60rpx;
+  border-radius: 5px;
+  /* background-color: rgb(211, 211, 211); */
+  width: 93%;
+  border-bottom: 1px solid #dcdcdc; /* 添加下划线 */
+  padding-bottom: 1rpx;
+  width: 370px;
+  height: 50px;
+}
+.input_area_logo{
+  /* display: inline-block; */
+  width: 35px;
+  height: 35px;
+}
+.input_area_alert{
+  /* display: inline-block; */
+  font-size: 35rpx;
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+}
+.input_area_space{
+  font-size: large;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  margin-bottom: 10rpx;
+  color: #7c7a7a;
+}
+.input_text{
+  /* display: inline-block; */
+
+  font-size: 35rpx;
+  width: 180px;
+  height: 20px;
+  margin-bottom: 10rpx;
+}
+.login_button{
+  width: 370px !important; /* 设置按钮的宽度 */ 
+  height:  60px; 
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center;    /* 垂直居中 */
+  font-weight:500;
+  font-size: 38rpx;
+  background-color:#2488F8;
+  color: azure;
+  border-radius: 15rpx;
+}
+.lost_password{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 60rpx; 
+    margin-left: 150rpx;
+}
+.lost_password_logo{
+  width: 25px;
+  height: 25px;
+}
+.lost_password_text{
+  font-size: 35rpx;
+  margin-left: 20rpx;
+  width: 180px;
+  height: 20px;
+  margin-bottom: 10rpx;
+  color:rgb(33, 116, 241);
+}
+.radio{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 60rpx; 
+  margin-left: 80rpx;
+}
+.radio_box{
+  width: 150px;
+}
+.radio_text{
+  width: 250px;
+  color:rgb(33, 116, 241);
+}

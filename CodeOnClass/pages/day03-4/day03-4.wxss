@@ -1,0 +1,35 @@
+/* pages/page3/page3.wxss */
+.container{
+  padding: 22rpx;
+  background-color: #F0F1F6;
+  height: 100vh;
+}
+.container .container-item{
+  background-color: white;
+  height: 100rpx;
+  border-radius: 16rpx;
+  margin-top: 30rpx;
+}
+.container .name-view{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10rpx 20rpx;
+}
+.name-view .name-view-right{
+  display: flex;
+  justify-items: center;
+}
+.name-view .name-view-left{
+  display: flex;
+  justify-items: center;
+}
+.name-view image{
+  width: 50rpx;
+  height: 50rpx;
+  background-color: red;
+}
+.name-view text{
+  line-height: 50rpx;
+  margin-left: 20rpx;
+}

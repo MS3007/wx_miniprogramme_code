@@ -1,0 +1,6 @@
+<!--pages/day02-3/day02-3.wxml-->
+<view class="title">Page03</view>
+<view class="container">
+  <button type="primary" bindtap="tapButtom">按钮</button>
+  <text class="number">{{text}}</text>
+</view>

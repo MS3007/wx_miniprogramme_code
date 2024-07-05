@@ -1,0 +1,15 @@
+<!--pages/page3/page3.wxml-->
+<view class="container">
+  <view class="container-item" wx:for="{{dataArray}}" wx:for-index="index" wx:for-item="item">
+    <view class="name-view">
+      <view class="name-view-left">
+        <image src="" mode="" />
+        <text>{{item.name}}</text> <text>({{item.number}})</text>
+      </view>
+      <view class="name-view-right">
+        <image src="" mode="" />
+        <text>普通会员</text>
+      </view>
+    </view>
+  </view>
+</view>

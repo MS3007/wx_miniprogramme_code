@@ -1,0 +1,39 @@
+<!--Pages/login/login.wxml-->
+<view class="page">
+	<view class="head-text">
+		<view class="text1">
+			欢迎回来！
+		</view>
+		<view class="text2">
+			欢迎使用，恒邦大学生实习实训小程序
+		</view>
+	</view>
+	<view class="input">
+		<view class="input-un">
+			<image class="logo" src="/images/user.png" />
+			<view class="divider"></view>
+			<input class="input-box" placeholder="请输入账号" value="{{userName}}" bind:input="inputData" data-flag="userName" />
+		</view>
+		<view class="input-pw">
+			<image class="logo" src="/images/password.png" />
+			<view class="divider"></view>
+			<input class="input-box" password="true" placeholder="请输入密码" bind:input="inputData" value="{{passWord}}" data-flag="passWord" />
+		</view>
+		<view class="input-cd-area">
+			<view class="input-cd">
+				<image class="logo" src="/images/vscode.png" />
+				<view class="divider"></view>
+				<input class="input-box" placeholder="请输入验证码" bind:input="inputData" data-flag="code" />
+			</view>
+			<image bindtap="clickCodeImg" class="code-img" src="{{codeImage}}"></image>
+		</view>
+		<label clasee="checkbox" bindtap="clickisRemember">
+			<checkbox value="isRemember" data-flag="isRemember" checked="{{isRemember}}" class="ck-box">记住密码
+			</checkbox>
+		</label>
+
+		<button bindtap="login" class="button1">登录</button>
+		<button bindtap="sign" class="button2">注册</button>
+	</view>
+
+</view>

@@ -1,0 +1,122 @@
+/* Pages/login/login.wxss */
+.page {
+	position: absolute;
+  width: 100vw;
+  height: 100vh;
+	background-image: url('https://zhoukaiwen.com/img/loginImg/2.png'), url('https://zhoukaiwen.com/img/loginImg/3.png');
+	background-color: rgb(251,251,251);
+  background-position: 100% -15%, -50% 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-size:100% 30%, 55% 30%;
+}
+.head-text{
+	margin-top: 180px;
+	margin-left: 30px;
+}
+.text1{
+	font-size: 25px;
+	font-weight: 550;
+}
+.text2{
+	font-size: 17px;
+	color: rgb(170,170,170);
+	margin-top: 40rpx;
+}
+.input{
+	margin-top:15%;
+}
+.input-un, .input-pw, .input-cd{
+	align-items: center; 
+  display: flex;
+	background-color: rgb(248,247,252);
+	border: rgba(234,234,236) solid 2rpx;
+	margin-top: 20px;
+	margin-left: 30px;
+	height: 45px;
+	border-radius: 60rpx;
+}
+.input-un, .input-pw{
+	width: 80%;
+}
+.input-cd{
+	width: 40%;
+}
+.divider {
+  width: 1px;
+  height: 24px;
+  background-color: #e0e0e0;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/* 输入框样式 */
+.input-box {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  background-color: transparent;
+}
+.logo {
+	margin-left: 20px;
+	width: 20px;
+	height: 20px;
+}
+.code-img{
+	margin-top: 20px;
+	margin-left: 5%;
+	width: 130px;
+	height: 40px;
+}
+.input-cd-area{
+	align-items: center; 
+	display: flex;
+}
+.ck-box{
+	margin-left: 68%;
+	margin-top: 20px;
+	font-size: 13px;
+}
+checkbox .wx-checkbox-input {
+	width: 34rpx;
+	height: 34rpx;
+	border-radius: 50%;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: rgb(86,119,252);
+  border-color:rgb(86,119,252);
+}
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 20rpx;
+  height: 20rpx;  
+  line-height: 20rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+.button1,.button2{
+  width: 60% !important; /* 设置按钮的宽度 */ 
+	height: 45px;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center;    /* 垂直居中 */
+  font-weight:500;
+  font-size: 38rpx;
+  border-radius: 50rpx;
+}
+.button1{
+	margin-top: 20px;
+  background-color:rgb(86,119,252);
+  color: azure;
+}
+.button2{
+	/* background-color:; */
+	margin-top: 15px;
+	color: rgb(86,119,252);
+	box-shadow: 0 4px 8px rgba(109,109,109, 0.2); /* 添加阴影 */
+
+}

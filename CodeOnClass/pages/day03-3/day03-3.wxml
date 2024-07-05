@@ -1,0 +1,3 @@
+<!--pages/day03-3/day03-3.wxml-->
+<text hidden="{{hiddenText}}">pages/day03-3/day03-3.wxml</text>
+<button bindtap="changeHidden">显示/隐藏</button>

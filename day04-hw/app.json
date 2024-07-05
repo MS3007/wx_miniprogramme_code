@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/sign/sign",
+    "pages/index/index",
+    "pages/page2/page2",
+    "pages/user/user",
+    "pages/logs/logs"
+
+  ],	
+  "tabBar": {
+    "selectedColor":"#5677FC",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "实习",
+        "iconPath": "/images/shixi.png",
+        "selectedIconPath": "/images/shixi_select.png"
+      },
+      {
+      "pagePath": "pages/page2/page2",
+      "text": "实训",
+      "iconPath": "/images/shixun.png",
+      "selectedIconPath": "/images/shixun_select.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "/images/my.png",
+      "selectedIconPath": "/images/my_select.png"
+    }
+  ]
+  },
+  "window": {
+
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

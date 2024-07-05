@@ -1,0 +1,17 @@
+<!--pages/page2/page2.wxml-->
+<swiper indicator-dots indicator-color="blue" autoplay interval="2000" circular>
+  <swiper-item style="background-color: red;">
+  <view style="background-color: blueviolet;">今天雨真好
+    
+  </view>
+  <view style="background-color: blueviolet;">今天雨真好
+    
+  </view>
+  </swiper-item>
+  <swiper-item style="background-color: yellow;">
+    <image src="../../images/01.jpg" mode="widthFix" style="width: 100vw;"/>
+  </swiper-item>
+  <swiper-item style="background-color: blue;">
+    <image src="../../images/02.jpg" mode="widthFix" style="width: 100vw;"/>
+  </swiper-item>
+</swiper>

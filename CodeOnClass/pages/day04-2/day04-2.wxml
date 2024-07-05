@@ -1,0 +1,32 @@
+<!--pages/work/work.wxml-->
+<button bind:tap="clickRequest">点击发起网络请求</button>
+<view>tabBar的代码：</view>
+<text>
+	"tabBar": {
+  "selectedColor":"",
+  "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/home/task_normal.png",
+      "selectedIconPath": "/images/home/task_select.png"
+    },
+    {
+    "pagePath": "pages/day01/day01",
+    "text": "第一天作业",
+    "iconPath": "/images/home/message_normal.png",
+    "selectedIconPath": "/images/home/message_select.png"
+  },{
+    "pagePath": "pages/day02-hw/day02-hw",
+    "text": "第二天作业",
+    "iconPath": "/images/home/my_normal.png",
+    "selectedIconPath": "/images/home/my_select.png"
+  },{
+    "pagePath":  "pages/day03-hw/day03-hw",
+    "text": "第三天作业",
+    "iconPath": "/images/home/study_mormal.png",
+    "selectedIconPath": "/images/home/study_select.png"
+  }
+]
+},
+</text>
