@@ -92,8 +92,7 @@ Page({
           },
           {
             type:'day05-3',
-            title: 'Day05-Page02',
-            
+            title: 'Day05-Page03',
           }
         ],
       },

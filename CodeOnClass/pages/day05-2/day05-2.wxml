@@ -1,3 +1,17 @@
-<!--pages/day05-2/day05-2.wxml-->
-<text>pages/day05-2/day05-2.wxml</text>
-<button bindtap="navigate">返回</button>
+<!--pages/page2/page2.wxml-->
+<wxs module="_">
+  module.exports.formatTime = function (time){
+    return time.substring(0,10)
+  }
+  module.exports.formmatPost = function(post, dictArray){
+    for (var index = 0; index < dictArray.length; index++) {
+      var element = dictArray[index];
+      if(element.dictValue === post){
+        return element.dictLabel
+      }
+    }
+  }
+</wxs>
+<text>{{_.formatTime(time)}}</text>
+
+<view wx:for="{{userArray}}" wx:key="index">{{item.name}} {{_.formmatPost(item.postCode, dataArray)}}</view>

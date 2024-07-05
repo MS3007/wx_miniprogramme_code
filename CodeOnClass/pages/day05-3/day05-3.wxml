@@ -1,2 +1,87 @@
-<!--pages/day05-3/day05-3.wxml-->
-<text>pages/day05-3/day05-3.wxml</text>
+<view class="content">
+  <form bindsubmit="">
+    <view class="title-view">基本信息</view>
+    <view class="form-view">
+      <view class="form-item">
+        <view class="form-item-left">活动名称</view>
+        <view class="form-item-right">
+          <input type="text" placeholder="请输入商品的名字" />
+        </view>
+      </view>
+      <view class="bottom-line"></view>
+      <view class="form-item">
+        <view class="form-item-left">参与等级</view>
+        <view class="form-item-right">
+          <!-- <input type="text" placeholder="请输入商品的名字"/> -->
+          <text>请选择等级</text>
+          <image src="" mode="" />
+        </view>
+      </view>
+      <view class="bottom-line"></view>
+      <view class="form-item">
+        <view class="form-item-left">活动日期</view>
+        <view class="form-item-right">
+          <text>请选择</text>
+          <image src="" mode="" />
+        </view>
+      </view>
+      <view class="bottom-line"></view>
+      <view class="form-item">
+        <view class="form-item-left">开始时间</view>
+        <view class="form-item-right">
+          <text>00:00</text>
+          <image src="" mode="" />
+        </view>
+      </view>
+      <view class="bottom-line"></view>
+      <view class="form-item">
+        <view class="form-item-left">结束时间</view>
+        <view class="form-item-right">
+          <text>23:59</text>
+          <image src="" mode="" />
+        </view>
+      </view>
+      <view class="bottom-line"></view>
+      <view class="form-item">
+        <view class="form-item-left">活动商品</view>
+        <view class="form-item-right">
+          <text>指定商品</text>
+          <image src="" mode="" />
+        </view>
+      </view>
+      <view class="bottom-line"></view>
+      <view class="form-item">
+        <view class="form-item-left">折扣方式</view>
+        <view class="form-item-right">
+          <text>指定价格</text>
+          <image src="" mode="" />
+        </view>
+      </view>
+      <view class="bottom-line"></view>
+    </view>
+    <view class="title-view">活动商品</view>
+    <view class="form-item shop-view">
+      <view class="form-item-left">折扣价</view>
+      <view class="form-item-right">
+        <text>2</text>
+        <text class="zhe-text">折</text>
+        <image src="" mode="" />
+      </view>
+    </view>
+    <view class="bottom-line"></view>
+    <view class="active-view">暂无活动</view>
+    <view class="bottom-line"></view>
+    <view class="add-view">
+      <view class="add-view-scan">
+        <image src="" mode=""/>
+        <text>扫码添加</text>
+      </view>
+      <view class="add-view-handle">
+        <image src="" mode=""/>
+        <text>手动添加</text>
+      </view>
+    </view>
+    <view class="bottom-line"></view>
+    <button>保 存</button>
+  </form>
+</view>

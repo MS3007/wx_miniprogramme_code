@@ -1,23 +1,50 @@
-// pages/day05-2/day05-2.js
+// pages/page2/page2.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    time: '2024-07-05 09:59:08',
+    dataArray: [{
+        dictLabel: '管理员',
+        dictValue: 1
+      },
+      {
+        dictLabel: '总经理',
+        dictValue: 2
+      },
+      {
+        dictLabel: '清洁工',
+        dictValue: 3
+      },
+      {
+        dictLabel: '前台',
+        dictValue: 4
+      },
+    ],
+    userArray: [{
+      name: '张三',
+      postCode: 1,
+    }, {
+      name: '李四',
+      postCode: 2,
+    }, {
+      name: '王五',
+      postCode: 3,
+    }, {
+      name: '赵六',
+      postCode: 4,
+    }],
   },
-  navigate(){
-    wx.navigateBack({
-      delta: 0,
-    })
 
-  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    console.log(options.name)
+    // this.setData({
+    //   time:this.data.time.substring(0,10)
+    // })
   },
 
   /**

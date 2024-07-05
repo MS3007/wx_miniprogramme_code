@@ -1,1 +1,122 @@
-/* pages/day05-3/day05-3.wxss */
+.content .title-view{
+  padding-left: 30rpx;
+  line-height: 90rpx;
+  height: 90rpx;
+  font-size: 34rpx;
+  color: #333333;
+  background-color: #e0e0e0;
+}
+
+.content .form-view{
+  background-color: white;
+  padding-left: 30rpx;
+}
+
+.form-view .form-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 104rpx;
+  justify-items: center;
+  font-size: 34rpx;
+}
+.form-item .form-item-left{
+  line-height: 104rpx;
+  height: 104rpx;
+}
+.form-item .form-item-right{
+  height: 104rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 30rpx;
+}
+.form-item-right input{
+  height: 104rpx;
+  text-align: right;
+}
+.form-item-right text{
+  height: 104rpx;
+  line-height: 104rpx;
+  text-align: right;
+  color: #999999;
+}
+
+.content .bottom-line{
+  background-color: #e0e0e0;
+  height: 1rpx;
+}
+
+.form-item-right image{
+  width: 20rpx;
+  height: 40rpx;
+  background-color: red;
+  margin-top: 32rpx;
+  margin-left: 20rpx;
+}
+
+ .shop-view{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 34rpx;
+  padding-left: 30rpx;
+}
+.shop-view .zhe-text{
+  padding: 0rpx 20rpx;
+  background-color: #F2F1F6;
+  margin-left: 24rpx;
+}
+.shop-view .form-item-right image{
+  margin: 0rpx;
+  height: 104rpx;
+  width: 60rpx;
+}
+.shop-view .form-item-right{
+  padding-right: 0rpx;
+}
+.content .active-view{
+  font-size: 34rpx;
+  text-align: center;
+  color: orange;
+  height: 104rpx;
+  line-height: 104rpx;
+}
+.content .add-view{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 34rpx;
+  color: #333333;
+  justify-items: center;
+}
+.add-view text{
+  line-height: 104rpx;
+  height: 104rpx;
+  margin-left: 20rpx;
+}
+.add-view image{
+  width: 50rpx;
+  height: 50rpx;
+  background-color: red;
+  margin-top: 28rpx;
+}
+.add-view view{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50vw;
+}
+.add-view .add-view-scan{
+  border-right: #e0e0e0 2rpx solid;
+}
+.content button{
+  width: 80vw;
+  background-color: #0087fc;
+  color: white;
+  font-size: 34rpx;
+  margin-top: 30rpx;
+  border-radius: 10rpx;
+  height: 100rpx;
+  line-height: 68rpx;
+}
