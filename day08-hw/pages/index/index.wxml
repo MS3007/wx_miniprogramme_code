@@ -1,0 +1,59 @@
+<scroll-view class="area" scroll-y="true" style="height: 100vh;">
+	<view class="item-area" wx:for="{{dataArray}}" wx:for-item="item" wx:key="id">
+		<view class="date">
+			{{item.date}}
+		</view>
+		<view class="item-son-area">
+			<view class="item">
+				<view class="title">
+					班次签到规定
+				</view>
+				<view class="value vt">
+					{{item.beginTime}}
+				</view>
+			</view>
+			<view class="item">
+				<view class="title">
+					签到时间
+				</view>
+				<view class="value vs">
+					{{item.sTime}}
+				</view>
+			</view>
+			<view class="item">
+				<view class="title">
+					签到状态
+				</view>
+				<view class="value vs">
+					{{item.sStatus}}
+				</view>
+			</view>
+			<view class="item">
+				<view class="title">
+					班次签退规定
+				</view>
+				<view class="value vt">
+					{{item.endTime}}
+				</view>
+			</view>
+			<view class="item">
+				<view class="title">
+					签退时间
+				</view>
+				<view class="value ve">
+					{{item.eTime}}
+				</view>
+			</view>
+			<view class="item">
+				<view class="title">
+					签退状态
+				</view>
+				<view class="value ve">
+					{{item.eStatus}}
+				</view>
+
+			</view>
+		</view>
+
+	</view>
+</scroll-view>
