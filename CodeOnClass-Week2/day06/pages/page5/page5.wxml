@@ -1,0 +1,3 @@
+<!--pages/page5/page5.wxml-->
+<text>pages/page5/page5.wxml</text>
+<map longitude="{{longitude}}" latitude="{{latitude}}" accuracy="1"/>

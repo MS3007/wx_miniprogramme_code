@@ -1,0 +1,6 @@
+<!--pages/page4/page4.wxml-->
+<text>pages/page4/page4.wxml</text>
+
+<button bind:tap="openScan">点我打开扫一扫</button>
+<button bind:tap="closeWifi">关闭WiFi</button>
+<button bind:tap="startWifi">初始化wifi</button>

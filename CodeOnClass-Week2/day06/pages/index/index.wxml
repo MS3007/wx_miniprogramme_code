@@ -1,0 +1,31 @@
+<!-- <icon type="success" size="93"></icon>
+<icon type="success_no_circle" size="93"></icon>
+<icon type="info" size="93"></icon>
+<icon type="warn" size="93"></icon>
+<icon type="waiting" size="93"></icon>
+<icon type="cancel" size="93"></icon>
+<icon type="download" size="93"></icon>
+<icon type="search" size="93"></icon>
+<icon type="clear" size="93"></icon> -->
+<icon type="success" size="93" />
+<icon type="success_no_circle" size="93" />
+<icon type="info" size="93" />
+<icon type="warn" size="93" />
+<icon type="waiting" size="93" />
+<icon type="cancel" size="93" />
+<icon type="download" size="93" />
+<icon type="search" size="93" />
+<icon type="clear" size="93" />
+
+<progress percent="{{number}}" border-radius="10" font-size="40rpx" stroke-width="50" activeColor="#0087FC" backgroundColor="#5BC7F5" active active-mode="forwards" duration="100" show-info />
+
+<view class="weui-cells weui-cells_after-title">
+  <radio-group bindchange="radioChange">
+    <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+      <view class="weui-cell__hd">
+        <radio value="{{item.name}}" checked="true" />
+      </view>
+      <view class="weui-cell__bd">{{item.name}}</view>
+    </label>
+  </radio-group>
+</view>

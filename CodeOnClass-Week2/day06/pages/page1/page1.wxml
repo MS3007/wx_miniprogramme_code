@@ -1,0 +1,4 @@
+<!--pages/page1/page1.wxml-->
+<switch type="checkbox" disabled checked="{{switch2Checked}}" bindchange="switch2Change"/>
+<switch type="switch" color="#0087FC" checked="{{switch2Checked}}" bindchange="switch2Change"/>
+<slider bindchange="slider4change" min="0" max="100" step="10" block-size="18" block-color="#0087FC"  show-value/>
