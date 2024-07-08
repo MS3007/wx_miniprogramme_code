@@ -36,9 +36,3 @@
 .area .item-son-area .item .vt {
   color: #808080;
 }
-.area .item-son-area .item .vs {
-  color: #549BFC;
-}
-.area .item-son-area .item .ve {
-  color: #F25630;
-}

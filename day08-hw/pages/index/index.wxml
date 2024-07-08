@@ -16,7 +16,7 @@
 				<view class="title">
 					签到时间
 				</view>
-				<view class="value vs">
+				<view class="value" style="color: {{item.sStatus == '●正常' ? '#549BFC' : '#F25630' }};" >
 					{{item.sTime}}
 				</view>
 			</view>
@@ -24,7 +24,7 @@
 				<view class="title">
 					签到状态
 				</view>
-				<view class="value vs">
+				<view class="value " style="color: {{item.sStatus == '●正常' ? '#549BFC' : '#F25630' }};">
 					{{item.sStatus}}
 				</view>
 			</view>
@@ -40,7 +40,7 @@
 				<view class="title">
 					签退时间
 				</view>
-				<view class="value ve">
+				<view class="value " style="color: {{item.eStatus == '●正常' ? '#549BFC' : '#F25630' }};">
 					{{item.eTime}}
 				</view>
 			</view>
@@ -48,7 +48,7 @@
 				<view class="title">
 					签退状态
 				</view>
-				<view class="value ve">
+				<view class="value" style="color: {{item.eStatus == '●正常' ? '#549BFC' : '#F25630' }};">
 					{{item.eStatus}}
 				</view>
 
