@@ -1,0 +1,119 @@
+.page {
+  background-color: #F2F1F6;
+}
+
+.example-search {
+  /* background-color: #b90606; */
+  padding: 05rpx 22rpx;
+  
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  --td-search-bg-color: white;
+}
+
+.example-search .t-search {
+  width: 100%;
+  margin-top: 20rpx;
+  margin-right: 15rpx;
+  border: solid 2px #C5C4C7;
+  border-radius: 15rpx;
+}
+
+.example-search .t-button {
+  background-color: white;
+  border: solid 2px #C5C4C7;
+  color: #000;
+  margin-top: 20rpx;
+  height: 85rpx;
+  width: 85rpx;
+
+}
+
+.example-search:not(:last-child) {
+  margin-bottom: 10rpx;
+}
+
+.pannel-item {
+  margin-top: 20rpx;
+}
+
+.block {
+  display: block;
+  margin-bottom: 22rpx;
+}
+
+.class-text {
+  color: #7F7F7F !important;
+}
+
+.class-description {
+  color: black !important;
+}
+
+.ppblock--right {
+  width: 380px;
+  height: 100vh;
+}
+
+.input-example {
+  margin-top: 30rpx;
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+  /* margin: 0 32rpx; */
+  /* --td-input-bg-color: rgb(252, 252, 252); */
+  /* --td-input-border-color: rgb(255, 0, 0); */
+  /* --td-input-default-text-color: rgb(0, 0, 0); */
+  /* --td-input-placeholder-text-color: rgba(0, 0, 0, 0.35); */
+}
+
+.input-block {
+  margin-top: 20rpx;
+  height: 5px;
+  border: 2rpx solid #918a8a;
+  border-radius: 12rpx;
+}
+
+.mpicker {
+  margin-top: 20rpx;
+  border: 2rpx solid #918a8a;
+  border-radius: 12rpx;
+  --td-cell-height: 45px;
+  --td-cell-title-color: #AFAFAF;
+}
+
+.mpicker-time {
+  width: 500px;
+  --td-cell-note-font-size: 22rpx
+}
+
+.tm-cell {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.text- {
+  margin-top: 20px;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  height: 20px;
+  /* background-color: red; */
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.swt {
+  margin-left: 220px;
+}
+
+.end-button {
+  margin-top: 60px;
+}
+
+.btn-ed {
+  margin: 0 45px;
+  /* 左右间距 */
+}

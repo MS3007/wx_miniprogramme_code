@@ -1,0 +1,119 @@
+<t-popup visible="{{visible}}" bind:visible-change="onVisibleChange" placement="right">
+  <view class="ppblock--right">
+  <view class="input-example">
+    时间范围
+    <view class=" tm-cell">
+      <view class="mpicker-time">
+        <t-cell class="mpicker " hover note="{{datetime1Text}}"  data-mode="datetime1" bindtap="showPicker" t-class="panel-item" />
+      </view>
+      <view class="text-">-</view>
+      <view class="mpicker-time">
+        <t-cell class="mpicker "   hover note="{{datetime2Text}}"  data-mode="datetime2" bindtap="showPicker" t-class="panel-item" />
+      </view>
+    </view>
+  </view>
+ 
+    <view class="input-example">
+      姓名
+      <t-input class="input-block" placeholder="请输入姓名" />
+    </view>
+    <view class="input-example">
+      座号
+      <t-input class="input-block" placeholder="请输入姓名" />
+    </view>
+    <view class="input-example">
+      IP
+      <t-input class="input-block" placeholder="请输入姓名" />
+    </view>
+    <view class="input-example">
+      上网账号
+      <t-input class="input-block" placeholder="请输入姓名" />
+    </view>
+    <view class="input-example">
+      等级
+      <t-cell class="mpicker" t-class="mtpicker" title="选择等级" arrow hover note="{{levelText}}" bind:click="onLevelPicker" />
+    </view>
+    <view class="input-example">
+      时间类型
+      <t-cell class="mpicker" t-class="mtpicker" title="选择时间类型" arrow hover note="{{timeTyText}}" bind:click="ontimeTyPicker" />
+    </view>
+    <view class="input-example">
+      是否换机
+        <switch class="swt" color="#267FFC" checked="true" />
+    </view> 
+    <view class="end-button">
+      <t-button class="btn-ed" style="height: 40px; width: 100px;" size="large" variant="outline">重置</t-button>
+    <t-button class="btn-ed" style=" height: 40px; width: 100px;" theme="primary" size="large" variant="outline">查询</t-button>
+    </view>
+    
+  </view>
+  <view>
+    
+  </view>
+</t-popup>
+<!-- <t-button block size="large" variant="outline" theme="primary" bind:tap="handlePopup" t-class="wrapper">
+  {{item.text}}
+</t-button> -->
+
+
+<t-picker visible="{{levelVisible}}" value="{{levelValue}}" data-key="level" title="选择等级" cancelBtn="取消" confirmBtn="确认" usingCustomNavbar bindchange="onPickerChange" bindpick="onColumnChange" bindcancel="onPickerCancel">
+  <t-picker-item options="{{levels}}" />
+</t-picker>
+
+<t-picker visible="{{timeTyVisible}}" value="{{timeTyValue}}" data-key="timeTy" title="选择时间类型" cancelBtn="取消" confirmBtn="确认" usingCustomNavbar bindchange="onPickerChange" bindpick="onColumnChange" bindcancel="onPickerCancel">
+  <t-picker-item options="{{timeTys}}" />
+</t-picker>
+
+<t-date-time-picker
+  title="选择日期和时间"
+  visible="{{datetime1Visible}}"
+  mode="second"
+  value="{{datetime1}}"
+  format="YYYY-MM-DD HH:mm:ss"
+  bindchange="onConfirm"
+  bindpick="onColumnChange"
+  bindcancel="hidePicker"
+/>
+<t-date-time-picker
+  title="选择日期和时间"
+  visible="{{datetime2Visible}}"
+  mode="second"
+  value="{{datetime2}}"
+  format="YYYY-MM-DD HH:mm:ss"
+  bindchange="onConfirm"
+  bindpick="onColumnChange"
+  bindcancel="hidePicker"
+/>
+<view class="page">
+	<view class="example-search">
+		<t-search class="serach" placeholder="输入姓名/身份证查询" />
+		<t-button bind:tap="handlePopup" class="fbtn" theme="default" icon="filter" shape="square" size="large" variant="outline"></t-button>
+	</view>
+	<view class="wrapper" wx:for="{{dataArray}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+		<t-collapse expand-mutex bind:change="handleChange" data-index="{{item.id}}">
+			<t-collapse-panel class="pannel-item" header="{{item.name}} ({{item.uid}}) {{item.level}}" value="{{0}}" expandIcon>
+				<view class="block">
+					<t-grid class="grid-item" column="{{3}}">
+						<t-grid-item t-class-description="class-description" t-class-text="class-text" text="刷卡时间" description="{{item.stTime}}" />
+						<t-grid-item t-class-description="class-description" t-class-text="class-text" text="下机时间" description="{{item.edTime}}" />
+						<t-grid-item t-class-description="class-description" t-class-text="class-text" text="总费用" description="{{item.cost}} 元" />
+						<t-grid-item t-class-description="class-description" t-class-text="class-text" text="IP" description="{{item.ip}}" />
+						<t-grid-item t-class-description="class-description" t-class-text="class-text" text="座位号" description="{{item.seatId}}" />
+						<t-grid-item t-class-description="class-description" t-class-text="class-text" text="行为" description="{{item.action}}" />
+						<t-grid-item t-class-description="class-description" t-class-text="class-text" text="上网账号" description="{{item.netId}}" />
+						<t-grid-item t-class-description="class-description" t-class-text="class-text" text="民族" description="{{item.nation}}" />
+						<t-grid-item t-class-description="class-description" t-class-text="class-text" text="性别" description="{{item.gender}}" />
+						<t-grid-item t-class-description="class-description" t-class-text="class-text" text="附加费" description="{{item.adtionCost}} 元" />
+						<t-grid-item t-class-description="class-description" t-class-text="class-text" text="券抵扣" description="{{item.psrc}}" />
+            
+					</t-grid>
+				</view>
+			</t-collapse-panel>
+			<t-grid t-class-description="class-description" t-class-text="class-text" class="grid-item" column="{{3}}" wx:if="{{!item.isExpanded}}">
+				<t-grid-item t-class-description="class-description" t-class-text="class-text" text="刷卡时间" description="{{item.stTime}}" />
+				<t-grid-item t-class-description="class-description" t-class-text="class-text" text="下机时间" description="{{item.edTime}}" />
+				<t-grid-item t-class-description="class-description" t-class-text="class-text" text="总费用" description="{{item.cost}} 元" />
+			</t-grid>
+		</t-collapse>
+	</view>
+</view>
